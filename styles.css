@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: radial-gradient(circle at center, #11171a 0%, #050505 100%);
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+#ui {
+    position: absolute;
+    top: 30px;
+    width: 100%;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 12px;
+    pointer-events: none;
+    user-select: none;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from { opacity: 0.3; text-shadow: 0 0 5px #fff; }
+    to { opacity: 0.8; text-shadow: 0 0 20px #fff, 0 0 30px #ff00de; }
+}
+
+canvas {
+    display: block;
+}
